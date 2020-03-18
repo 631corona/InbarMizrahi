@@ -1,0 +1,22 @@
+{
+  "name": "inbar-corona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/631corona/InbarMizrahi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/631corona/InbarMizrahi/issues"
+  },
+  "homepage": "https://github.com/631corona/InbarMizrahi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
