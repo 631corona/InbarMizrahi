@@ -6,3 +6,8 @@ $(document).ready(function() {
         console.log('hello');
     }, config.popupTime);
 });
+
+
+function serverData() {
+    return {};
+}
