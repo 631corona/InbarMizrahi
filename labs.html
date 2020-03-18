@@ -22,7 +22,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <!-- My own -->
+    <!-- My own styles -->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <script type="text/javascript" src="./script.js"></script>
 </head>
@@ -39,7 +39,7 @@
             <nav class="col-md-3 d-none d-md-block bg-light sidebar hebrew-content">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">
                                 <i class="fas fa-vial"></i>
                                 דיגמת מעבדה
@@ -51,7 +51,7 @@
                                 סטטוס חיסונים
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="labs.html">
                                 <i class="fa fa-flask"></i>
                                 כל המעבדות
@@ -68,13 +68,25 @@
             </nav>
 
             <main role="main" class="col-md-8 ml-sm-auto col-lg-9 pt-3 px-4 hebrew-content">
-                <h2>נלחמים בקורונה ביחד!</h2>
+                <h2>סטטוס מעבדות</h2>
                 <div class="row">
-                    <div class="col-6">
-                        ​<picture>
-                            <source srcset="./images/yosi.jpeg" type="image/svg+xml" />
-                            <img src="./images/yosi.jpeg" class="img-fluid img-thumbnail" alt="יוסי נבדק" />
-                        </picture>
+                    <div class="col-12">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">שם</th>
+                                    <th scope="col">אחוז הצלחה (%)</th>
+                                    <th scope="col">סטטוס</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>דן</td>
+                                    <td>35%</td>
+                                    <td>מתקדם</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </main>

@@ -1,0 +1,13 @@
+.hebrew-content {
+    direction: rtl;
+    text-align: right;
+}
+.nav-link {
+    color: rgb(70, 178, 157);
+}
+.nav-link:hover, .nav-link:focus {
+    color: rgb(39, 99, 87);
+}
+.nav-item.active {
+    background: #ededed;
+}
