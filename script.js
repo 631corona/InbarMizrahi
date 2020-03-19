@@ -1,9 +1,12 @@
 const config = {
-    popupTime: 60 * 1000 // 1 min
+    popupTime: 2 * 1000 // 2 secs
 };
 
 $(document).ready(function() {
     const data = serverData();
+    setTimeout(function() {
+        $("#base_popup").modal('show');
+    }, config.popupTime);
 
     setLabs(data.labs);
 });
