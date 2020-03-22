@@ -9,6 +9,7 @@ $(document).ready(function() {
     }, config.popupTime);
 
     setLabs(data.labs);
+    setSoldiers(data.soldiers);
 });
 
 
@@ -26,6 +27,18 @@ function setLabs(labs) {
         `);
     }
 }
+
+function setSoldiers(soldiers) {
+    soldiers = soldiers.filter(s => s.quarantine === 'HOME'); // Get all soldiers in home
+    $("#total_soldiers").html(soldiers.length);
+
+    for(let soldier of soldiers) {
+        $("#soldiers_list").append(`
+            <li class="list-group-item">${soldier.name}</li>
+        `);
+    }
+}
+
 
 function convert_status(status) {
     if(status == 'SUCCESS')
@@ -114,6 +127,28 @@ function serverData() {
                 "status": "FAILED",
                 "progress_percentile": 21
             }
+        ],
+        soldiers: [
+            {
+                name: 'דוד',
+                location: 'Tel-Aviv',
+                quarantine: 'HOME'
+            },
+            {
+                name: 'משה',
+                location: 'Tel-Aviv',
+                quarantine: 'HOME'
+            },
+            {
+                name: 'שלמה',
+                location: 'Tel-Aviv',
+                quarantine: 'HOME'
+            },
+            {
+                name: 'יחזקאל',
+                location: 'Tel-Aviv',
+                quarantine: 'BASE'
+            },
         ]
     };
 }
